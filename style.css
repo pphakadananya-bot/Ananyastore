@@ -56,3 +56,6 @@ h2{color:var(--pink);margin:0 0 14px}
 .note{font-size:.85rem;color:#888;margin:12px 0}
 .clear{background:none;border:0;color:#999;text-decoration:underline;cursor:pointer;margin:0 0 12px;padding:0}
 button:focus-visible,a:focus-visible{outline:3px solid var(--blue-text);outline-offset:2px}
+
+header{background:repeating-linear-gradient(90deg,#dce8f8 0,#dce8f8 16px,#eef4fc 16px,#eef4fc 32px)}
+
