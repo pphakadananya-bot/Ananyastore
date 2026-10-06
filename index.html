@@ -87,7 +87,8 @@ function showCart(){
   else{
     let total=0;
     html+=ids.map(i=>{const p=products[i],q=cart[i];total+=p.price*q;
-      return `<div class="line"><div><div>${p.name}</div><div class="ctl"><button onclick="cc(${i},-1)" aria-label="ลด">−</button><span>${q}</span><button onclick="cc(${i},1)" aria-label="เพิ่ม">+</button><button class="rm" onclick="cc(${i},-99)">ลบ</button></div></div><span>฿${p.price*q}</span></div>`}).join('');
+      return `<div class="line"><div><div>${p.name}</div><div class="ctl"><button class="rm" onclick="cc(${i},-99)">ยกเลิก</button></div>
+</div><span>฿${p.price*q}</span></div>`}).join('');
     html+=`<div class="total"><span>รวม</span><span>฿${total}</span></div>
     <p class="note">* ยอดนี้เป็นค่าสินค้าอย่างเดียว ยังไม่รวมค่าส่ง<br>แคปหน้าจอนี้ส่งให้ร้านทาง DM ได้เลย</p>
     <button class="clear" onclick="clearCart()">ล้างตะกร้าทั้งหมด</button>`;
