@@ -4,13 +4,13 @@
    เปลี่ยนสีเป็นรหัส เช่น #ff99bb (หาได้จากคำว่า "color picker")
    ============================================================ */
 :root{
-  --pink:#c9668c;        /* ชมพูเข้ม: ชื่อร้าน หัวข้อ ราคา ปุ่ม Shop here */
-  --pink-soft:#f9e4ec;   /* ชมพูอ่อน: พื้นหัวเว็บ กรอบรูป เส้นขอบ */
-  --pink-btn:#e8a6bf;    /* ชมพูปุ่ม "เพิ่ม" */
-  --blue:#bcd6f0;        /* ฟ้า: ปุ่มเมนู และเส้นใต้หัวเว็บ */
-  --blue-text:#4a6a9c;   /* ตัวอักษรบนปุ่มฟ้า */
-  --bg:#fff7f9;          /* สีพื้นหลังทั้งเว็บ */
-  --text:#555;           /* สีตัวอักษรทั่วไป */
+--pink:#4a2511;
+--pink-soft:#dce8f8;
+--pink-btn:#b9d1f0;
+--blue:#b9d1f0;
+--blue-text:#4a2511;
+--bg:#fbf7ef;
+--text:#5a3a28;
   --font:-apple-system,"Sukhumvit Set","Noto Sans Thai",Arial,sans-serif; /* ฟอนต์ */
 }
 *{box-sizing:border-box}
