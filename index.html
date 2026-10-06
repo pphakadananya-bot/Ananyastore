@@ -74,7 +74,7 @@ function refresh(){
   save();
 }
 function chg(i,d){
-  const n=(cart[i]||0)+d;
+const n=Math.min(1,(cart[i]||0)+d);
   if(n<=0)delete cart[i];else cart[i]=n;
   refresh();
 }
