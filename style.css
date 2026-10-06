@@ -1,0 +1,57 @@
+/* ============================================================
+   สไตล์ของเว็บ — อยากเปลี่ยนสี/ฟอนต์ ให้แก้ที่ชุดตัวแปรด้านล่างสุดก่อน
+   (บรรทัดที่ขึ้นต้นด้วย --) แก้ที่เดียว สีเปลี่ยนทั้งเว็บ
+   เปลี่ยนสีเป็นรหัส เช่น #ff99bb (หาได้จากคำว่า "color picker")
+   ============================================================ */
+:root{
+  --pink:#c9668c;        /* ชมพูเข้ม: ชื่อร้าน หัวข้อ ราคา ปุ่ม Shop here */
+  --pink-soft:#f9e4ec;   /* ชมพูอ่อน: พื้นหัวเว็บ กรอบรูป เส้นขอบ */
+  --pink-btn:#e8a6bf;    /* ชมพูปุ่ม "เพิ่ม" */
+  --blue:#bcd6f0;        /* ฟ้า: ปุ่มเมนู และเส้นใต้หัวเว็บ */
+  --blue-text:#4a6a9c;   /* ตัวอักษรบนปุ่มฟ้า */
+  --bg:#fff7f9;          /* สีพื้นหลังทั้งเว็บ */
+  --text:#555;           /* สีตัวอักษรทั่วไป */
+  --font:-apple-system,"Sukhumvit Set","Noto Sans Thai",Arial,sans-serif; /* ฟอนต์ */
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font)}
+button{font-family:inherit}
+header{background:var(--pink-soft);border-bottom:6px solid var(--blue);text-align:center;padding:32px 16px;cursor:pointer}
+header h1{margin:0;color:var(--pink);font-size:2rem}
+main{max-width:560px;margin:0 auto;padding:24px 16px 110px}
+.logo{position:relative;width:110px;height:110px;margin:0 auto 18px;border-radius:50%;background:var(--pink-soft);border:3px solid #fff;box-shadow:0 2px 10px #0002;display:flex;align-items:center;justify-content:center;color:var(--pink);font-size:2.4rem;font-weight:700;overflow:hidden}
+.logo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.contacts{display:flex;gap:14px;justify-content:center;margin-bottom:26px}
+.contacts a{width:54px;height:54px;border-radius:50%;background:#fff;color:var(--pink);box-shadow:0 2px 8px #0002;display:flex;align-items:center;justify-content:center}
+.contacts svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.menu{display:flex;flex-direction:column;gap:14px}
+.big{border:0;border-radius:18px;padding:20px;font-size:1.1rem;background:var(--blue);color:var(--blue-text);cursor:pointer}
+.big.main{background:var(--pink);color:#fff;font-weight:700}
+.back{background:none;border:0;color:var(--pink);font-size:1rem;cursor:pointer;margin-bottom:12px;padding:0}
+h2{color:var(--pink);margin:0 0 14px}
+.box{background:#fff;border:2px solid var(--pink-soft);border-radius:18px;padding:18px;line-height:1.7}
+.box ol,.box ul{margin:0;padding-left:20px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#fff;border:2px solid var(--pink-soft);border-radius:18px;padding:12px;text-align:center}
+.ph{background:var(--pink-soft);color:var(--pink);border-radius:12px;height:120px;display:flex;align-items:center;justify-content:center;margin-bottom:8px;overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover}
+.card b{display:block;font-size:.9rem}
+.detail{font-size:.8rem;color:#999;margin-top:2px}
+.price{color:var(--pink);font-weight:700;margin:4px 0 8px}
+.row{display:flex;gap:6px;justify-content:center}
+.add,.del{border:0;border-radius:999px;padding:7px 14px;cursor:pointer;font-size:.9rem}
+.add{background:var(--pink-btn);color:#fff}
+.del{background:#eee;color:#888}
+.qty{font-size:.8rem;color:#999;margin-top:6px;min-height:1.2em}
+.sold{color:#aaa;display:inline-block;padding:7px 0}
+#cart{position:fixed;right:16px;bottom:16px;background:var(--pink);color:#fff;border:0;border-radius:999px;padding:14px 22px;font-size:1rem;box-shadow:0 4px 14px #0003;cursor:pointer}
+#modal{display:none;position:fixed;inset:0;background:#0006;z-index:10;align-items:flex-end;justify-content:center}
+#modal .sheet{background:#fff;width:100%;max-width:560px;max-height:85%;overflow:auto;border-radius:20px 20px 0 0;padding:20px}
+.line{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px dashed var(--pink-soft)}
+.ctl{display:flex;gap:8px;align-items:center;margin-top:6px}
+.ctl button{border:0;background:var(--pink-soft);color:var(--pink);border-radius:50%;width:28px;height:28px;cursor:pointer;font-size:1rem}
+.ctl .rm{width:auto;border-radius:999px;padding:0 10px;background:#eee;color:#888;font-size:.8rem}
+.total{font-weight:700;color:var(--pink);font-size:1.15rem;display:flex;justify-content:space-between;margin-top:12px}
+.note{font-size:.85rem;color:#888;margin:12px 0}
+.clear{background:none;border:0;color:#999;text-decoration:underline;cursor:pointer;margin:0 0 12px;padding:0}
+button:focus-visible,a:focus-visible{outline:3px solid var(--blue-text);outline-offset:2px}
