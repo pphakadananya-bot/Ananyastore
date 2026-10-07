@@ -17,7 +17,7 @@ const cats=["พวงกุญแจ แบบที่ 1", "พวงกุญ
 
 const products=[
   // ---------- พวงกุญแจ แบบที่ 1 ----------
-  {name:"พวงกุญแจ แบบที่ 1 ชิ้นที่ 1", price:59, detail:"", cat:"พวงกุญแจ แบบที่ 1",IMG_1884.jpeg:"", soldOut:false},
+  {name:"พวงกุญแจ แบบที่ 1 ชิ้นที่ 1", price:59, detail:"", cat:"พวงกุญแจ แบบที่ 1", img:"IMG_1884.jpeg", soldOut:false},
   {name:"พวงกุญแจ แบบที่ 1 ชิ้นที่ 2", price:59, detail:"", cat:"พวงกุญแจ แบบที่ 1", img:"", soldOut:false},
   {name:"พวงกุญแจ แบบที่ 1 ชิ้นที่ 3", price:59, detail:"", cat:"พวงกุญแจ แบบที่ 1", img:"", soldOut:false},
   {name:"พวงกุญแจ แบบที่ 1 ชิ้นที่ 4", price:59, detail:"", cat:"พวงกุญแจ แบบที่ 1", img:"", soldOut:false},
