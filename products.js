@@ -61,9 +61,9 @@ const products=[
   {name:"กำไล แบบที่ 2 ชิ้นที่ 9", price:59, detail:"", cat:"กำไล แบบที่ 2", img:"", soldOut:false},
   {name:"กำไล แบบที่ 2 ชิ้นที่ 10", price:59, detail:"", cat:"กำไล แบบที่ 2", img:"", soldOut:false},
   // ---------- กำไล แบบที่ 3 ----------
-  {name:"กำไล แบบที่ 3 ชิ้นที่ 1", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"", soldOut:false},
-  {name:"กำไล แบบที่ 3 ชิ้นที่ 2", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"", soldOut:false},
-  {name:"กำไล แบบที่ 3 ชิ้นที่ 3", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"", soldOut:false},
+  {name:"กำไล แบบที่ 3 ชิ้นที่ 1", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"IMG_1878.jpeg", soldOut:false},
+  {name:"กำไล แบบที่ 3 ชิ้นที่ 2", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"IMG_1880.jpeg", soldOut:false},
+  {name:"กำไล แบบที่ 3 ชิ้นที่ 3", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"IMG_1881.jpeg", soldOut:false},
   {name:"กำไล แบบที่ 3 ชิ้นที่ 4", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"", soldOut:false},
   {name:"กำไล แบบที่ 3 ชิ้นที่ 5", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"", soldOut:false},
   {name:"กำไล แบบที่ 3 ชิ้นที่ 6", price:59, detail:"", cat:"กำไล แบบที่ 3", img:"", soldOut:false},
