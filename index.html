@@ -90,7 +90,7 @@ const n=Math.min(1,(cart[i]||0)+d);
   refresh();
 }
 function cc(i,d){chg(i,d);showCart()}
-function clearCart(){if(confirm('Cleqr cart')){cart={};refresh();showCart()}}
+function clearCart(){if(confirm('Clear all')){cart={};refresh();showCart()}}
 function showCart(){
   const ids=Object.keys(cart);
   let html='<h2>My cart</h2>';
@@ -101,8 +101,8 @@ function showCart(){
       return `<div class="line"><div><div>${p.name}</div><div class="ctl"><button class="rm" onclick="cc(${i},-99)">cancel</button></div>
 </div><span>฿${p.price*q}</span></div>`}).join('');
     html+=`<div class="total"><span>Total</span><span>฿${total}</span></div>
-    <p class="note">* ยอดนี้เป็นค่าสินค้าอย่างเดียว ยังไม่รวมค่าส่ง<br>แคปหน้าจอนี้ส่งให้ร้านทาง DM ได้เลย</p>
-    <button class="clear" onclick="clearCart()">ล้างตะกร้าทั้งหมด</button>`;
+    <p class="note">*Shipping not included<br>ยังไม่รวมค่าส่ง</p>
+    <button class="clear" onclick="clearCart()">Clear all</button>`;
   }
   html+=`<button class="big" style="width:100%;padding:14px" onclick="closeCart()">close</button>`;
   document.getElementById('sheet').innerHTML=html;
