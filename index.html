@@ -101,7 +101,7 @@ function showCart(){
       return `<div class="line"><div><div>${p.name}</div><div class="ctl"><button class="rm" onclick="cc(${i},-99)">cancel</button></div>
 </div><span>฿${p.price*q}</span></div>`}).join('');
     html+=`<div class="total"><span>Total</span><span>฿${total}</span></div>
-    <p class="note">*Shipping not included<br>ยังไม่รวมค่าส่ง</p>
+    <p class="note">*Shipping not included</p>
     <button class="clear" onclick="clearCart()">Clear all</button>`;
   }
   html+=`<button class="big" style="width:100%;padding:14px" onclick="closeCart()">close</button>`;
