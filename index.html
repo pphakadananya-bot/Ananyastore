@@ -28,7 +28,7 @@ const LINKS={
 const info={
     read:{title:"Read Before Order",tag:"ul",items:["Put your pre-order notes here","No returns or exchanges unless the item is damaged","Please record an unboxing video"]},
   how:{title:"How to Order",tag:"ol",items:["Choose a category and tap “Add” on the items you want","Open the cart at the bottom right and check your list","Screenshot your cart and send it to us via DM","We will confirm the shipping fee and prepare your order"]},
-  promo:{title:"test123",tag:"ul",items:["Put your promotions here"]}
+  promo:{title:"Special Offers",tag:"ul",items:["Put your promotions here"]}
 };
 
 const ICONS={
@@ -54,7 +54,7 @@ function go(page,arg,keep){
   if(page==='home'){
     v.innerHTML=`<div class="logo"><span>A</span><img src="logo.png" alt="logo" onerror="this.remove()"></div>
     <div class="contacts">${Object.entries(LINKS).map(([n,u])=>`<a ${u?`href="${u}" target="_blank" rel="noopener"`:`href="#" onclick="return false"`} aria-label="${n}">${ICONS[n]}</a>`).join('')}</div>
-    <div class="menu">${btn('Read Before Ordering',"go('read')")}${btn('How To Order',"go('how')")}${btn('Promotion',"go('promo')")}${btn('Shop here',"go('shop')",'big main')}</div>`;
+    <div class="menu">${btn('Read Before Ordering',"go('read')")}${btn('How To Order',"go('how')")}${btn('Special Offers',"go('promo')")}${btn('Shop here',"go('shop')",'big main')}</div>`;
   }else if(info[page]){
     const i=info[page];
     v.innerHTML=`${back("go('home')")}<h2>${i.title}</h2><div class="box"><${i.tag}>${i.items.map(x=>`<li>${x}</li>`).join('')}</${i.tag}></div>`;
