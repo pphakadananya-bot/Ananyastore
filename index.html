@@ -70,11 +70,11 @@ function go(page,arg,keep){
     const i=info[page];
     v.innerHTML=`${back("go('home')")}<h2>${i.title}</h2><div class="box"><${i.tag}>${i.items.map(x=>`<li>${x}</li>`).join('')}</${i.tag}></div>`;
   }else if(page==='shop'){
-    v.innerHTML=`${back("go('home')")}<div class="menu">${cats.map((c,i)=>btn(c,`go('cat',${i})`)).join('')}</div>`;
+    v.innerHTML=`${back("go('home')")}<div class="menu">${cats.map((c,i)=>btn(cn(c),`go('cat',${i})`)).join('')}</div>`;
   }else if(page==='cat'){
     const c=cats[arg];
     const list=products.map((p,i)=>({p,i})).filter(x=>x.p.cat===c);
-    v.innerHTML=`${back("go('shop')")}<h2>${c}</h2><div class="grid">${list.map(({p,i})=>`<div class="card"><div class="ph">${p.img?`<img src="${p.img}" alt="${p.name}">`:'รูปสินค้า'}</div><b>${p.name}</b>${p.detail?`<div class="detail">${p.detail}</div>`:''}<div class="price">฿${p.price}</div>${p.soldOut?'<span class="sold">sold out</span>':`<div class="row"><button class="add" onclick="chg(${i},1)">add</button><button class="del" onclick="chg(${i},-1)">cancel</button></div><div class="qty" id="q${i}">${cart[i]?'ในตะกร้า '+cart[i]+' ชิ้น':''}</div>`}</div>`).join('')||'<p>ยังไม่มีสินค้าในหมวดนี้</p>'}</div>`;
+    v.innerHTML=`${back("go('shop')")}<h2>${cn(c)}</h2><div class="grid">${list.map(({p,i})=>`<div class="card"><div class="ph">${p.img?`<img src="${p.img}" alt="${p.name}">`:'รูปสินค้า'}</div><b>${p.name}</b>${p.detail?`<div class="detail">${p.detail}</div>`:''}<div class="price">฿${p.price}</div>${p.soldOut?'<span class="sold">sold out</span>':`<div class="row"><button class="add" onclick="chg(${i},1)">add</button><button class="del" onclick="chg(${i},-1)">cancel</button></div><div class="qty" id="q${i}">${cart[i]?'ในตะกร้า '+cart[i]+' ชิ้น':''}</div>`}</div>`).join('')||'<p>ยังไม่มีสินค้าในหมวดนี้</p>'}</div>`;
   }
   if(!keep)scrollTo(0,0);
 }
