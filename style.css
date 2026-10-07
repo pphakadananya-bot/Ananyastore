@@ -59,5 +59,5 @@ button:focus-visible,a:focus-visible{outline:3px solid var(--blue-text);outline-
 
 header{background:repeating-linear-gradient(90deg,#dce8f8 0,#dce8f8 16px,#eef4fc 16px,#eef4fc 32px)}
 
-.ph{border:1px solid var(--pink)}
+.ph{border:1px solid var(--blue)}
 
